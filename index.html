@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <form class="container">
+      <div class="main">
+        <h2>Login</h2>
+
+        <label for="">Email</label>
+        <input type="email" name="" id="" required class="email" />
+
+        <div class="inner"></div>
+
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          required
+          oninput="Checker()"
+          class="pass"
+        />
+        <div><i class="fas fa-lock"></i></div>
+        <span class="showpass">
+          <img
+            class="eye-close"
+            id="img1"
+            src="https://i.postimg.cc/HWMtCN1m/eye-close.png"
+            alt=""
+            onclick="toggle()"
+          />
+        </span>
+
+        <span class="result" id="result"></span>
+        <input type="button" value="Login" class="login" />
+      </div>
+
+      <div class="validator">
+        <p id="capital">
+          <i class="fas fa-times"></i>
+          <i class="fas fa-check"></i>
+          <span>Upper Case</span>
+        </p>
+        <p id="special-char">
+          <i class="fas fa-times"></i>
+          <i class="fas fa-check"></i>
+          <span>Special Character</span>
+        </p>
+        <p id="number">
+          <i class="fas fa-times"></i>
+          <i class="fas fa-check"></i>
+          <span>Number</span>
+        </p>
+        <p id="more-than-8">
+          <i class="fas fa-times"></i>
+          <i class="fas fa-check"></i>
+          <span>More than 8 characters</span>
+        </p>
+      </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
